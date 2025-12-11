@@ -10,7 +10,7 @@ export const analyzeRiskProtocol = async (
 ): Promise<string> => {
   try {
     const prompt = `
-      You are the AI Safety Officer for NordicFlight Ops.
+      You are the AI Safety Officer for LUX OPS AERIAL.
       Current Telemetry:
       - Weather: Wind ${weather.windSpeed} m/s ${weather.windDirection}, Temp ${weather.temp}C.
       - Compliance Score: 72 (Hazardous).

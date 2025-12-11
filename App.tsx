@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { LayoutGrid, Bell, Settings, Volume2, Moon, Ruler, Cpu, Activity, Zap, Wind } from 'lucide-react';
+import { Hexagon, Bell, Settings, Volume2, Moon, Ruler, Cpu, Activity, Zap, Wind } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import OperationalMap from './components/OperationalMap';
 import AlertPanel from './components/AlertPanel';
@@ -185,8 +185,10 @@ export default function App() {
           settings.darkMode ? 'bg-gray-900 border-gray-700' : 'bg-white border-[#E5E7EB]'
       }`}>
         <div className="flex items-center gap-3">
-           <LayoutGrid size={20} className={settings.darkMode ? 'text-white' : 'text-[#111827]'} />
-           <span className={`text-sm font-bold tracking-tight ${settings.darkMode ? 'text-white' : 'text-[#111827]'}`}>NORDICFLIGHT<span className="font-normal text-gray-500">OPS</span></span>
+           <Hexagon size={26} strokeWidth={2.5} className={settings.darkMode ? 'text-white' : 'text-black'} />
+           <span className={`text-xl font-sans font-black tracking-tighter ${settings.darkMode ? 'text-white' : 'text-black'}`}>
+             LUX OPS <span className="font-bold text-gray-500 tracking-tight">AERIAL</span>
+           </span>
         </div>
 
         <div className="flex items-center gap-8 text-xs font-medium text-gray-500">
